@@ -1,0 +1,16 @@
+.headerdesktop__botao{
+    color: white;
+    background: #23A6F0;
+    border: 0px;
+    height: 50px;
+    width: 190px;
+    font-family: Montserrat;
+    border-radius: 8px;
+}
+
+.headerdesktop__botao__seta{
+    width: 15px;
+    height: 10px;
+    color: white;
+    margin-left: 10px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index/index.css">
+    <link rel="stylesheet" href="assets/css/headermobile/headermobile.css">
+    <link rel="stylesheet" href="assets/css/headermobile/headermobile-titulo.css">
+    <link rel="stylesheet" href="assets/css/headermobile/headermobile-lista.css">
+    <link rel="stylesheet" href="assets/css/headermobile/headermobile-divicons.css">
+
+    <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop.css">
+    <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop-titulo.css">
+    <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop-lista.css">
+    <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop-botao.css">
+    
+    <link rel="stylesheet" href="assets/css//home/home-divbotao.css">
+    <link rel="stylesheet" href="assets/css/home/home-botaoLearn.css">
+    <link rel="stylesheet" href="assets/css/home/home-botaoQuote.css">
+    <link rel="stylesheet" href="assets/css/home/home-divForm-form-input.css">
+    <link rel="stylesheet" href="assets/css/home/home-divForm-form-label.css">
+    <link rel="stylesheet" href="assets/css/home/home-divForm-form-select.css">
+    <link rel="stylesheet" href="assets/css/home/home-divForm-form-submit.css">
+    <link rel="stylesheet" href="assets/css/home/home-divForm-form.css">
+    <link rel="stylesheet" href="assets/css/home/home-divForm-titulo.css">
+    <link rel="stylesheet" href="assets/css/home/home-divForm.css">
+    <link rel="stylesheet" href="assets/css/home/home-h1.css">
+    <link rel="stylesheet" href="assets/css/home/home-p.css">
+
+
+    <link rel="stylesheet" href="assets/css/home/home.css">
+    <title>Physlonic</title>
+</head>
+<body>
+    <header class="wrapperheadermobile">
+    <div class="headermobile">
+        <h2 class="headermobile__titulo">Physionic</h2>
+        <div class="headermobile__divicons">
+            <img src="assets/img/lupa.svg" alt="Click to go to searchbar">
+            <img src="assets/img/carrinho-compra.svg" alt="Click to go to the shopping cart">
+            <img src="assets/img/icon-menu.svg" alt="Click to open the navbar menu" data-menu-button>
+        </div>
+    </div>
+        <ul class="headermobile__lista" data-lista-menu>
+            <li>Home</li>
+            <li>Product</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    
+    <div class="wrapper--headerdesktop--home">
+        <header class="wrapperheaderdesktop">
+            <div class="headerdesktop">
+                <h2 class="headerdesktop__titulo">Physionic</h2>
+                <ul class="headerdeskop__lista">
+                    <li><a>Home</a></li>
+                    <li><a>Product</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+                <button class="headerdesktop__botao">Get Quote Now<img class="headerdesktop__botao__seta" src="assets/img/seta.svg"></button>
+            </div>
+        </header>
+
+        <section class="home">
+            <div>
+                <h1 class="home__h1">Meet the best Hospital</h1>
+                <p class="home__p">We know how large objects will act, but things on a small scale.</p>
+                <div class="home__divbotao">
+                    <button class="home__botaoQuote">Get Quote Now</button>
+                    <button class="home__botaoLearn">Learn More</button>
+                </div>
+            </div>
+            <div class="home__divForm">
+                <h2 class="home__divForm__titulo">Book Appointment</h2>
+                <form class="home__divForm__form">
+                    <label for="" class="home__divForm__form__label">Name</label>
+                    <input type="text" class="home__divForm__form__input" placeholder="Full Name">
+                    
+                    <label for="" class="home__divForm__form__label">Email</label>
+                    <input type="text"class="home__divForm__form__input" placeholder="example@gmail.com">
+                    
+                    <label for="" class="home__divForm__form__label">Department</label>
+                    <select class="home__divForm__form__input home__divForm__form__select">
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="General">General</option>
+                        <option value="Gynecologist">Gynecologist</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Ophthalmology">Ophthalmology</option>
+                        <option value="Surgery">Surgery</option>
+                        <option value="Psychiatry">Psychiatry</option>
+                    </select>
+                    
+                    <label for="" class="home__divForm__form__label">Time</label>
+                    <input type="datetime-local" class="home__divForm__form__input">
+                </form>
+                <input class="home__divForm__form__submit" type="submit" value="Submit Appointment"></input>
+            </div>
+        </section>
+
+        <div style="background-color: blue; width: 100vw; height: 100px;"></div>
+    </div>
+</body>
+<script src="assets/js/myscript.js"></script>
+</html>

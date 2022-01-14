@@ -1,0 +1,13 @@
+.headerdesktop__titulo{
+    color: white;
+    font-family: Montserrat;
+    text-shadow: 
+    -1.5px -1.5px 0px #000,
+     0px -1.5px 0px #000,
+     1.5px -1.5px 0px #000,
+    -1.5px  0px 0px #000,
+     1.5px  0px 0px #000,
+    -1.5px  1.5px 0px #000,
+     0px  1.5px 0px #000,
+     1.5px  1.5px 0px #000;
+}

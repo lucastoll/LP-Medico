@@ -1,0 +1,12 @@
+.headermobile__divicons{
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2.375rem;
+    margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 340px) {
+    .headermobile__divicons{
+        gap: 1rem;
+    }
+}

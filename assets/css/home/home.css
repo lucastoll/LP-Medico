@@ -1,0 +1,50 @@
+.home{
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/img/homebackgrounddesktop.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+@media screen and (min-width: 500px){
+    .home{
+        background-position: 13% 0%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home{
+        background-position: 45% 0%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .home{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px 100px;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .home{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

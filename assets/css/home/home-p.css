@@ -1,0 +1,29 @@
+.home__p{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 35px 10px;
+    max-width: 280px;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px){
+    .home__p{
+        max-width: 450px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home__p{
+        max-width: 630px;
+        font-size: 45px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .home__p{
+        font-size: 27px;
+        text-align: start;
+        max-width: 350px;
+    }
+}

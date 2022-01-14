@@ -1,0 +1,25 @@
+.home__botaoLearn{
+    background: rgba(0,0,0,0);
+    border-radius: 64px;
+    border: 1px solid white;
+    color: white;
+    font-family: Montserrat;
+    height: 40px;
+    width: 150px;
+}
+
+@media screen and (min-width: 500px){
+    .home__botaoLearn{
+        width: 200px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home__botaoLearn{
+        width: 300px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+

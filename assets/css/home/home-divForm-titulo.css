@@ -1,0 +1,22 @@
+.home__divForm__titulo{
+    color: #252B42;
+    font-size: 19px;
+}
+
+@media screen and (min-width: 500px){
+    .home__divForm__titulo{
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home__divForm__titulo{
+        font-size: 52px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home__divForm__titulo{
+        font-size: 30px;
+    }
+}

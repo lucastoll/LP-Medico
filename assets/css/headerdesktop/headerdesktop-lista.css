@@ -1,0 +1,8 @@
+.headerdeskop__lista{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    width: 300px;
+    gap: 20px;
+}

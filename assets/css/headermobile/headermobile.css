@@ -1,0 +1,10 @@
+.headermobile{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px){
+    .wrapperheadermobile{
+        display: none;
+    }
+}

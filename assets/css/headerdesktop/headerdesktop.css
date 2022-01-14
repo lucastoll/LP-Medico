@@ -1,0 +1,18 @@
+.wrapperheaderdesktop{
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.headerdesktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapperheaderdesktop{
+        display: block;
+    }
+}

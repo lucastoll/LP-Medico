@@ -1,0 +1,19 @@
+.home__divbotao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .home__divbotao{
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .home__divbotao{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
