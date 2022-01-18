@@ -6,6 +6,15 @@
     font-family: Montserrat;
     height: 40px;
     width: 150px;
+    transition: background ease-in-out .3s;
+}
+
+.home__botaoLearn:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+.home__botaoLearn:active{
+    background: rgba(0,0,0,0.8);
 }
 
 @media screen and (min-width: 500px){

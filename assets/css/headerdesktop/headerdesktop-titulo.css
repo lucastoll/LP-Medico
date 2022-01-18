@@ -11,3 +11,7 @@
      0px  1.5px 0px #000,
      1.5px  1.5px 0px #000;
 }
+
+.headerdesktop__titulo:hover{
+    cursor: pointer;
+}

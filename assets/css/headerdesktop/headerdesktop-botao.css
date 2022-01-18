@@ -6,6 +6,7 @@
     width: 190px;
     font-family: Montserrat;
     border-radius: 8px;
+    transition: background ease-in-out 0.3s;
 }
 
 .headerdesktop__botao__seta{
@@ -13,4 +14,12 @@
     height: 10px;
     color: white;
     margin-left: 10px;
+}
+
+.headerdesktop__botao:hover{
+    background: #1b8dcf;
+}
+
+.headerdesktop__botao:active{
+    border: 1px solid white;
 }

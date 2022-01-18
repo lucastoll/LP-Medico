@@ -28,6 +28,12 @@
     <link rel="stylesheet" href="assets/css/home/home-h1.css">
     <link rel="stylesheet" href="assets/css/home/home-p.css">
 
+    <link rel="stylesheet" href="assets/css/popUp/popUp-botaoX.css">
+    <link rel="stylesheet" href="assets/css/popUp/popUp-botaoOk.css">
+    <link rel="stylesheet" href="assets/css/popUp/popUp-container.css">
+    <link rel="stylesheet" href="assets/css/popUp/popUp-paragrafo.css">
+    <link rel="stylesheet" href="assets/css/popUp/popUp-titulo.css">
+    <link rel="stylesheet" href="assets/css/popUp/popUp.css">
 
     <link rel="stylesheet" href="assets/css/home/home.css">
     <title>Physlonic</title>
@@ -75,30 +81,50 @@
             </div>
             <div class="home__divForm">
                 <h2 class="home__divForm__titulo">Book Appointment</h2>
-                <form class="home__divForm__form">
-                    <label for="" class="home__divForm__form__label">Name</label>
-                    <input type="text" class="home__divForm__form__input" placeholder="Full Name">
+                <form class="home__divForm__form" id="f" data-form>
+                    <label for="enName" class="home__divForm__form__label">Name</label>
+                    <input type="text" class="home__divForm__form__input" placeholder="Full Name" required id="enName" name="Name" data-form-name>
                     
-                    <label for="" class="home__divForm__form__label">Email</label>
-                    <input type="text"class="home__divForm__form__input" placeholder="example@gmail.com">
+                    <label for="enEmail" class="home__divForm__form__label">Email</label>
+                    <input type="text"class="home__divForm__form__input" placeholder="example@gmail.com" required id="enEmail" name="email" data-form-email>
                     
-                    <label for="" class="home__divForm__form__label">Department</label>
-                    <select class="home__divForm__form__input home__divForm__form__select">
-                        <option value="Cardiology">Cardiology</option>
-                        <option value="General">General</option>
-                        <option value="Gynecologist">Gynecologist</option>
-                        <option value="Neurology">Neurology</option>
-                        <option value="Ophthalmology">Ophthalmology</option>
-                        <option value="Surgery">Surgery</option>
-                        <option value="Psychiatry">Psychiatry</option>
+                    <label for="enDepartment" class="home__divForm__form__label">Department</label>
+                    <select class="home__divForm__form__input home__divForm__form__select" required id="enDepartment" data-form-department> 
+                        <option value="" selected disabled hidden>Please select</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="general">General</option>
+                        <option value="gynecologist">Gynecologist</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="ophthalmology">Ophthalmology</option>
+                        <option value="surgery">Surgery</option>
+                        <option value="psychiatry">Psychiatry</option>
                     </select>
                     
-                    <label for="" class="home__divForm__form__label">Time</label>
-                    <input type="datetime-local" class="home__divForm__form__input">
-                </form>
+                    <label for="enTime" class="home__divForm__form__label">Time</label>
+                    <select class="home__divForm__form__input" id="enTime" data-form-time required>
+                        <option disabled value="" selected disabled hidden>Please select</option>
+                        <option value="1:00PM">1:00PM Available</option>
+                        <option disabled>2:00PM Unavailable</option>
+                        <option>2:00PM Available</option>
+                        <option>3:00PM Available</option>
+                        <option>4:00PM Available</option>
+                        <option disabled>6:00PM Unavailable</option>
+                        <option disabled>7:00PM Unavailable</option>
+                    </select>
                 <input class="home__divForm__form__submit" type="submit" value="Submit Appointment"></input>
+                </form>
             </div>
         </section>
+
+        <div class="popUp">
+            <div class="popUp__container">
+                <button class="popUp__botaoX" id="popUp__fechar1">x</button>
+                <h2 class="popUp__titulo">Commitment registered.</h2>
+                <p class="popUp__paragrafo" data-popUp-paragrafo></p>
+                <button class="popUp__botaoOk" id="popUp__fechar2">OK</button>
+            </div>
+        </div>
+
 
         <div style="background-color: blue; width: 100vw; height: 100px;"></div>
     </div>

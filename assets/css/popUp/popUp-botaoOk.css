@@ -1,0 +1,19 @@
+.popUp__botaoOk{
+    background: #23A6F0;
+    border-radius: 4px;
+    border: 0px;
+    color: white;
+    height: 30px;
+    max-width: 350px;
+    width: 100%;
+    font-size: 18px;
+    transition: background ease-in-out 0.3s;
+}
+
+.popUp__botaoOk:hover{
+    background: #1b8dcf;
+}
+
+.popUp__botaoOk:active{
+    border: 1px solid black;
+}

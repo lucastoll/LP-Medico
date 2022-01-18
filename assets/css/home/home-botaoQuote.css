@@ -8,7 +8,18 @@
     height: 40px;
     width: 200px;
     margin-bottom: 20px;
+    transition: background ease-in-out .3s;
 }
+
+.home__botaoQuote:hover{
+    background: #1b8dcf;
+}
+
+.home__botaoQuote:active{
+    border: 1px solid white;
+}
+
+
 
 @media screen and (min-width: 500px){
     .home__botaoQuote{

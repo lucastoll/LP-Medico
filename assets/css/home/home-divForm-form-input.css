@@ -5,3 +5,7 @@
     font-family: Montserrat;
     font-size: 20px;
 }
+
+.home__divForm__form__input:focus, .home__divForm__form__input:hover{
+    background: #e6e6e6bd;
+}
