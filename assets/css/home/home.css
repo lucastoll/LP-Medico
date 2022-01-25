@@ -27,12 +27,13 @@
         align-items: flex-start;
         padding: 20px 100px;
         justify-content: space-between;
+        height: 100vh;
     }
 }
 
 @media screen and (min-width: 1440px){
     .home{
-        background-size: 100% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden;
     }

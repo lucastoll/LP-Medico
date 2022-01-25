@@ -1,0 +1,23 @@
+.cases__caseBox__bottom__lista{
+    color: #737373;
+    list-style: "-";
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.cases__caseBox__bottom__lista li{
+    margin-bottom: 5px;
+}
+
+.cases__caseBox__bottom__lista li span{
+    margin-left: 5px;
+}
+
+.cases__caseBox__bottom__lista a{
+    color: #23A6F0;
+}
+
+.cases__caseBox__bottom__lista a:hover{
+    cursor: pointer;
+}

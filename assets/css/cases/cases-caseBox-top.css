@@ -1,0 +1,14 @@
+.cases__caseBox__top{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px 20px 20px;
+    position: relative;
+}
+
+@media screen and (min-width: 1024px){
+    .cases__caseBox__top{
+        padding: 20px 0px 20px 40px;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,14 @@
+.cases__titulo{
+    font-weight: 900;
+    text-shadow: 0px 2px 2px black;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+@media screen and (min-width: 1024px){
+    .cases__titulo{
+        font-size: 60px;
+    }
+}
