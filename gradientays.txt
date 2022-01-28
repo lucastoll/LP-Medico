@@ -1,0 +1,8 @@
+gradientes
+
+foto original 
+
+#FFC7D1 -> #FFB5E6 -> #CB91C4
+
+
+
