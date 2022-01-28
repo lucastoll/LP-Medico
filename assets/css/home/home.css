@@ -1,6 +1,6 @@
 .home{
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://github.com/lucastoll/LandingPageMedico/blob/main/assets/img/homebackgrounddesktop.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://raw.githubusercontent.com/lucastoll/LandingPageMedico/main/assets/img/homebackgrounddesktop.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     color: white;

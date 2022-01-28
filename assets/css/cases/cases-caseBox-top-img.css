@@ -1,5 +1,5 @@
 .cases__caseBox__top__img{
-    background-image: url(https://github.com/lucastoll/LandingPageMedico/blob/main/assets/img/cases-mobile.png);
+    background-image: url(https://raw.githubusercontent.com/lucastoll/LandingPageMedico/main/assets/img/cases-mobile.png);
     background-size: 60px;
     height: 60px;
     width: 60px;
@@ -7,6 +7,6 @@
 
 @media screen and (min-width: 1024px){
     .cases__caseBox__top__img{
-        background-image: url(https://github.com/lucastoll/LandingPageMedico/blob/main/assets/img/cases-desktop.png);
+        background-image: url(https://raw.githubusercontent.com/lucastoll/LandingPageMedico/main/assets/img/cases-desktop.png);
     }
 }
