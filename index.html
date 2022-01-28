@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--owlcarousel-->
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
+    <!-- index -->
     <link rel="stylesheet" href="assets/css/index/index.css">
+    <!-- headermobile -->
     <link rel="stylesheet" href="assets/css/headermobile/headermobile.css">
     <link rel="stylesheet" href="assets/css/headermobile/headermobile-titulo.css">
     <link rel="stylesheet" href="assets/css/headermobile/headermobile-lista.css">
     <link rel="stylesheet" href="assets/css/headermobile/headermobile-divicons.css">
-
+    <!-- headerdesktop -->
     <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop.css">
     <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop-titulo.css">
     <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop-lista.css">
     <link rel="stylesheet" href="assets/css/headerdesktop/headerdesktop-botao.css">
-    
+    <!-- home -->
     <link rel="stylesheet" href="assets/css/home/home.css">
     <link rel="stylesheet" href="assets/css//home/home-divbotao.css">
     <link rel="stylesheet" href="assets/css/home/home-botaoLearn.css">
@@ -28,14 +35,14 @@
     <link rel="stylesheet" href="assets/css/home/home-divForm.css">
     <link rel="stylesheet" href="assets/css/home/home-h1.css">
     <link rel="stylesheet" href="assets/css/home/home-p.css">
-
+    <!-- popUp -->
     <link rel="stylesheet" href="assets/css/popUp/popUp-botaoX.css">
     <link rel="stylesheet" href="assets/css/popUp/popUp-botaoOk.css">
     <link rel="stylesheet" href="assets/css/popUp/popUp-container.css">
     <link rel="stylesheet" href="assets/css/popUp/popUp-paragrafo.css">
     <link rel="stylesheet" href="assets/css/popUp/popUp-titulo.css">
     <link rel="stylesheet" href="assets/css/popUp/popUp.css">
-
+    <!-- cases -->
     <link rel="stylesheet" href="assets/css/cases/cases-caseBox-bottom-lista.css">
     <link rel="stylesheet" href="assets/css/cases/cases-caseBox-bottom.css">
     <link rel="stylesheet" href="assets/css/cases/cases-caseBox-top-img.css">
@@ -45,7 +52,14 @@
     <link rel="stylesheet" href="assets/css/cases/cases-paragrafo.css">
     <link rel="stylesheet" href="assets/css/cases/cases-titulo.css">
     <link rel="stylesheet" href="assets/css/cases/cases.css">
-
+    <!-- testimonial -->
+    <link rel="stylesheet" href="assets/css/testimonial/testimonial.css">
+    <link rel="stylesheet" href="assets/css/testimonial/testimonial-titulo.css">
+    <link rel="stylesheet" href="assets/css/testimonial/testimonial-paragrafo.css">
+    <link rel="stylesheet" href="assets/css/testimonial/testimonial-box.css">
+    <link rel="stylesheet" href="assets/css/testimonial/testimonial-box-rating.css">
+    <link rel="stylesheet" href="assets/css/testimonial/testimonial-box-paragrafo.css">
+    <link rel="stylesheet" href="assets/css/testimonial/testimonial-box-fotocliente.css">
     <title>Physlonic</title>
 </head>
 <body>
@@ -135,7 +149,7 @@
             </div>
         </div>
 
-        <div class="cases">
+        <section class="cases">
             <h2 class="cases__titulo">Leading Medicine</h2>
             <p class="cases__paragrafo">Problems trying to resolve 
                 the conflict between the 
@@ -197,11 +211,124 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="testimonial">
+            <h2 class="testimonial__titulo">What clients Say</h2>
+            <p class="testimonial__paragrafo">Checkout what our clients say about the two major realms of Classical physics: Newtonian mechanics</p>
+
+                <div class="owl-carousel owl-theme testimonial__carousel">
+                        <!-- Aysha -->
+                        <div class="testimonial__box--wrapper">
+                            <div class="testimonial__box aysha">
+                                <img src="assets/img/shooting-side.png" class="staraysha">
+                                <img src="assets/img/shooting-side.png" class="staraysha">
+                                <img src="assets/img/shooting-side.png" class="staraysha">
+                                <img src="assets/img/shooting-side.png" class="staraysha">
+
+                                <div>
+                                    <span class="fa fa-star aysharating"></span>
+                                    <span class="fa fa-star aysharating"></span>
+                                    <span class="fa fa-star aysharating"></span>
+                                    <span class="fa fa-star aysharating"></span>
+                                    <span class="fa fa-star aysharating"></span>
+                                    <span class="fa fa-star aysharating"></span>
+                                </div>
+                                <p class="tesmimonial__box__paragrafo">Parou em 😎</p>
+                                <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; justify-self: flex-end;">
+                                    <div class="fotocliente__aysha--wrapper">
+                                        <img src="assets/img/pp/aysha.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
+                                    </div>
+                                    <p>Aysha</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pekeno -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars1.svg" alt="Rating 1 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo">Ela alugou um continente na minha cabeça</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/pekeno.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Pekeno</p>
+                            </div>
+                        </div>
+                        <!-- Poli -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars2.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo">Minha frase não coube aqui 🤬</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/poli.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Poli</p>
+                            </div>
+                        </div>
+                        <!-- Guibis -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars2.svg" alt="Rating 2 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo">Caralho o cruzeiro perdeu denovo</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/guibis.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Guibis</p>
+                            </div>
+                        </div>
+                        <!-- Andrew -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars3.svg" alt="Rating 3 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo chupeta">Ela tem insta??</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/andrew.jpeg" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Anderson polga</p>
+                            </div>
+                        </div>
+                        <!-- Rafa -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo">Nunca se cale ou estará em silêncio 🤫</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/rafa.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Rafa</p>
+                            </div>
+                        </div>
+                        <!-- Marcao -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo">Onde você mora?</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/marcao.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Marcão</p>
+                            </div>
+                        </div>
+                        <!-- Tody -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo">Vamo no show do shawn mendes</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/tody.jpeg" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Tody</p>
+                            </div>
+                        </div>
+                        <!-- Ripnado -->
+                        <div class="testimonial__box">
+                            <img src="assets/img/stars1.svg" alt="Rating 1 stars out of 5" class="testimonial__box__rating">
+                            <p class="tesmimonial__box__paragrafo">A porra da vaga era pra PCD</p>
+                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                                <img src="assets/img/pp/ripnado.jpg" alt="Profile picture" class="testimonial__box__fotocliente">
+                                <p>Ripnado</p>
+                            </div>
+                        </div>
+
+                </div>
+    </section>
 
 
         <div style="background-color: blue; width: 100vw; height: 100px;"></div>
+        
+
+
+
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="assets/js/myscript.js"></script>
+<script src="assets/js/owlcarousel.js"></script>
 </html>

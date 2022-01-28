@@ -1,0 +1,18 @@
+.testimonial{
+    align-items: center;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.testimonial__carousel{
+    max-width: 370px;
+}
+
+@media screen and (min-width: 1024px) {
+    .testimonial__carousel{
+        max-width: 1300px;
+    }
+}

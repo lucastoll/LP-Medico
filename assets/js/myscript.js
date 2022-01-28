@@ -52,6 +52,10 @@ myForm.addEventListener("submit", (e) => {
      document.querySelector('[data-form-email]').value = ""
  }) 
 
+ function sleep(ms) {
+     return new Promise(resolve => setTimeout(resolve, ms));
+   }
+ 
 /* Animações caseBox */
 const animaCaseBox = function revealCaseBox () {
      let cases = document.getElementsByClassName('cases__caseBox')
@@ -59,8 +63,6 @@ const animaCaseBox = function revealCaseBox () {
      var elementTop = cases[0].getBoundingClientRect().top;
      var elementVisible = 100;
 
-
-     console.log(windowHeight + "," + elementTop + "," + elementVisible)
      for(var i = 0; i < cases.length; i++)
      {
           var elementTop = cases[i].getBoundingClientRect().top;
@@ -77,9 +79,11 @@ const animaCaseBox = function revealCaseBox () {
      {
           for(var j = 0; j < cases.length; j++)
           {
+               sleep(17000);
                cases[j].style.transition = "all .3s"
           }
      }
 }
 
-window.addEventListener("scroll", animaCaseBox); 
+window.addEventListener("scroll", animaCaseBox);
+
