@@ -1,15 +1,15 @@
-.cases__paragrafo{
+.faq__paragrafo{
     color: #737373;
     font-weight: 500;
     margin-top: 10px;
     text-align: center;
     font-size: 16px;
     margin-bottom: 75px;
-    max-width: 70vw;
+    max-width: 60vw;
 }
 
 @media screen and (min-width: 768px){
-    .cases__paragrafo{
+    .faq__paragrafo{
         font-size: 22px;
     }
 }

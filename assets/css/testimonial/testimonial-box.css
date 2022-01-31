@@ -11,6 +11,11 @@
     z-index: 1;
 }
 
+@media screen and (min-width: 1024px){
+    .testimonial__box{
+        margin-left: 15px;
+    }
+}
 
 /* Estilização card especial */
 

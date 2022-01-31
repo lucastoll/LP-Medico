@@ -10,3 +10,10 @@ Psychiatry
 
 
 
+    const img = boxAtual.firstElementChild
+    const div = img.nextElementSibling
+    const h2 = div.firstElementChild
+    const p = h2.nextElementSibling
+    console.log(p)
+
+console.log($('this').find('div'));
