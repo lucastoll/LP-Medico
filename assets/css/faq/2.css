@@ -21,7 +21,9 @@
     position: relative;
     text-align: left;
     width: 263px;
+    text-align: left;
     padding-left: 45px;
+    position: relative;
   }
   
   .content { /* Paragrafo */
@@ -38,12 +40,14 @@
 
     position: absolute;
     transition: max-height 0.3s ease-out;
-    width: 196px;
+    width: 223px;
 
     font-size: 14px;
     text-align: justify;
   }
 
+
+  
 .faq__boxwrapper{ /* Div que abriga 3 botões / caixas. */
     align-items: center;
     display: flex;
@@ -70,11 +74,11 @@
 
 @media screen and (min-width: 1024px) {
     .collapsible{
-        width: 320px;
+        width: 300px;
     }
 
     .content{
-        width: 253px;
+        width: 233px;
     }
 
     .faq__boxwrapper{
@@ -87,15 +91,5 @@
 
     .faq__boxwrapper:nth-child(3){
         display: flex;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .collapsible{
-        width: 414px;
-    }
-
-    .content{
-        width: 347px;
     }
 }
