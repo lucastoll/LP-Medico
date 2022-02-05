@@ -1,0 +1,8 @@
+.pricing__boxplano__lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 15px;
+}
+

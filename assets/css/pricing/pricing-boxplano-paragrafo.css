@@ -1,0 +1,12 @@
+.pricing__boxplano__paragrafo{
+    max-width: 300px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #737373;
+}
+
+.pricingAtivo .pricing__boxplano__paragrafo{
+    color: rgb(245, 244, 244);
+}

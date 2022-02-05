@@ -1,0 +1,43 @@
+.pricing__boxplano{
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid #23A6F0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 550px;
+    justify-content: center;
+    padding: 50px 40px;
+    width: 70%;
+    transition: all .2s ease-in-out
+}
+
+.pricing__boxplano.pricingAtivo{
+    background: #252B42;
+    color: white;
+    height: 590px;
+    transition: all .2s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.pricing__boxplano__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .pricing__boxplano__wrapper{
+        flex-direction: row;
+        gap: 3px;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .pricing__boxplano.pricingAtivo{
+        margin-bottom: 0px;
+    }
+}

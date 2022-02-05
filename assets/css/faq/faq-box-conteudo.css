@@ -1,0 +1,43 @@
+.faq__box__conteudo { /* Paragrafo */
+    background-color: #FFFFFF;
+    border: 0px;
+    border-bottom: 2px solid #DEDEDE;
+    border-left: 2px solid #DEDEDE;
+    border-right: 2px solid #DEDEDE;
+
+    max-height: 40px;
+    overflow: hidden;
+    padding-left: 45px;
+    padding-right: 18px;
+
+    position: absolute;
+    transition: max-height 0.3s ease-out;
+    width: 196px;
+    margin-bottom: 100px;
+
+    font-size: 16px;
+    text-align: left;
+  }
+
+@media screen and (min-width: 400px) {
+    .faq__box__conteudo{
+        width: 303px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .faq__box__conteudo{
+        width: 253px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .faq__box__conteudo{
+        width: 347px;
+        font-size: 16px;
+    }
+}
+
+
+

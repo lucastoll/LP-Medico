@@ -1,0 +1,39 @@
+.faq__box__button { /* Botao = caixa */
+    background: #FFFFFF;
+    border: 0px;
+    border-left: 2px solid #DEDEDE;
+    border-right: 2px solid #DEDEDE;
+    border-top: 2px solid #DEDEDE;
+
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    outline: none;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+
+    position: relative;
+    text-align: left;
+    width: 263px;
+    padding-left: 45px;
+  }
+
+  @media screen and (min-width: 400px) {
+    .faq__box__button{
+        width: 370px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .faq__box__button{
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .faq__box__button{
+        width: 414px;
+    }
+}

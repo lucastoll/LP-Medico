@@ -1,0 +1,25 @@
+.pricing__boxplano__lista__item{
+    font-style: normal;
+    font-weight: 400;
+    color: #252B42;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (min-width: 768px){
+    .pricing__boxplano__lista__item{
+        font-size: 18px;
+    }
+}
+
+
+.pricing__boxplano__lista__item img{
+    width: 20px;
+    height: 20px;
+    margin-top: 1px; 
+}
+
+.pricingAtivo .pricing__boxplano__lista__item{
+    color: rgb(245, 244, 244);
+}

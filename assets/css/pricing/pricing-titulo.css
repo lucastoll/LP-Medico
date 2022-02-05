@@ -1,0 +1,13 @@
+.pricing__titulo{
+    font-weight: 900;
+    text-shadow: 0px 2px 2px black;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1024px){
+    .pricing__titulo{
+        font-size: 60px;
+    }
+}
