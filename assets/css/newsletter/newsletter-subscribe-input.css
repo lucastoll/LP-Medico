@@ -1,0 +1,16 @@
+.newsletter__subscribe__input{
+    height: 57px;
+    border: 0px;
+    padding-left: 15px;
+    width: 180px;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    .newsletter__subscribe__input{
+        width: 360px;
+    }
+}

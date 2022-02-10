@@ -1,0 +1,79 @@
+.creditos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.creditosestrela{
+    margin: 3px;
+}
+
+.teste{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divtextomeio{
+    overflow: hidden;
+    width: 300px;
+}
+
+.textomeio{
+    height: 20px;
+    width: fit-content;
+    overflow: hidden;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.estrelaesquerda{
+    position: absolute;
+    left: 46%;
+    animation: staresquerda 1.5s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.estreladireita{
+    position: absolute;
+    right: 46%;
+    animation: stardireita 1.5s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textomeio{
+    from{
+        width: 0px;
+    }
+    to{
+        width: fit-content;
+    }
+}
+
+
+@keyframes staresquerda {
+    from{
+        left: 46%;
+    }
+    to{
+        left: 5%;
+    }
+}
+
+@keyframes stardireita {
+    from{
+        right: 46%;
+    }
+    to{
+        right: 5%;
+    }
+}

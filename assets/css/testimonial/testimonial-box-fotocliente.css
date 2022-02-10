@@ -3,3 +3,9 @@
     height: 60px !important;
     border-radius: 50%;
 }
+
+.testimonial__box__fotocliente--wrapper{
+    padding: 3px;
+    border-radius: 50%;
+    background: #a1a1a1;
+}

@@ -4,12 +4,24 @@
     justify-content: space-between;
     background: #FFFFFF;
     border-radius: 5px;
-    border: 2px solid #DEDEDE;
+    border: 2px solid #bbbbbb;
     padding: 30px 35px;
     max-width: 300px !important;
     height: 170px;
     z-index: 1;
+    transition: all ease-in-out .3s;
 }
+
+.testimonial__box:hover{
+    background: #f3f3f3;
+    border: 2px solid #bbbbbb;
+}
+
+.testimonial__box:active{
+    background: #f3f3f3;
+    border: 2px solid #bbbbbb;
+}
+
 
 @media screen and (min-width: 1024px){
     .testimonial__box{
@@ -26,6 +38,10 @@
     margin: 0px;
 }
 
+.aysha:hover{
+    background: #f3f3f3;
+    border: none;
+}
 
 .testimonial__box--wrapper{
     background-color: #f8ceec;

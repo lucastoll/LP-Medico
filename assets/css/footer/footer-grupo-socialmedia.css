@@ -1,0 +1,15 @@
+.footer__grupo__socialmedia--wrapper{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer__grupo__socialmedia{
+    transition: color .2s ease;
+    color: #23A6F0;
+}
+
+.footer__grupo__socialmedia:hover{
+    color: #1a7fb9;
+    transition: color .2s ease;
+}

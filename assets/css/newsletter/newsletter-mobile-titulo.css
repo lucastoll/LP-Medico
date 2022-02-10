@@ -1,0 +1,15 @@
+.newsletter__mobile__titulo{
+    display: block;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    max-width: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+    .newsletter__mobile__titulo{
+        display: none;
+    }
+}

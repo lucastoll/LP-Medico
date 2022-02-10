@@ -1,0 +1,7 @@
+.footer__grupo__lista__item{
+    margin-top: 10px;
+}
+
+.footer__grupo__lista__item:hover{
+    cursor: pointer;
+}

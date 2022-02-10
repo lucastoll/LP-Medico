@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index/all.css">
     <!--owlcarousel-->
     <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
@@ -79,6 +79,25 @@
     <link rel="stylesheet" href="assets/css/pricing/pricing-paragrafo.css">
     <link rel="stylesheet" href="assets/css/pricing/pricing-titulo.css">
     <link rel="stylesheet" href="assets/css/pricing/pricing.css">
+    <!-- newsletter -->
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter-desktop-paragrafo.css">
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter-desktop-titulo.css">
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter-desktop.css">
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter-mobile-titulo.css">
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter-subscribe-button.css">
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter-subscribe-input.css">
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter-subscribe.css">
+    <link rel="stylesheet" href="assets/css/newsletter/newsletter.css">
+    <!-- footer -->
+    <link rel="stylesheet" href="assets/css/footer/footer-grupo-lista-item.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-grupo-lista.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-grupo-paragrafo.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-grupo-socialmedia.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-grupo-titulo.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-grupo.css">
+    <link rel="stylesheet" href="assets/css/footer/footer.css">
+    <!-- creditos -->
+    <link rel="stylesheet" href="assets/css/creditos/creditos.css">
     <title>Physlonic</title>
 </head>
 <body>
@@ -92,10 +111,10 @@
         </div>
     </div>
         <ul class="headermobile__lista" data-lista-menu>
-            <li>Home</li>
-            <li>Product</li>
-            <li>Pricing</li>
-            <li>Contact</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
     
@@ -104,385 +123,479 @@
             <div class="headerdesktop">
                 <h2 class="headerdesktop__titulo">Physionic</h2>
                 <ul class="headerdeskop__lista">
-                    <li><a>Home</a></li>
-                    <li><a>Product</a></li>
-                    <li><a>Pricing</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href="#home"    class="linkHeaderDesktop">Home</a></li>
+                    <li><a href="#product" class="linkHeaderDesktop">Product</a></li>
+                    <li><a href="#pricing" class="linkHeaderDesktop">Pricing</a></li>
+                    <li><a href="#contact" class="linkHeaderDesktop">Contact</a></li>
                 </ul>
                 <button class="headerdesktop__botao">Get Quote Now<img class="headerdesktop__botao__seta" src="assets/img/seta.svg"></button>
             </div>
         </header>
+    </div>
 
-        <section class="home">
-            <div>
-                <h1 class="home__h1">Meet the best Hospital</h1>
-                <p class="home__p">We know how large objects will act, but things on a small scale.</p>
-                <div class="home__divbotao">
-                    <button class="home__botaoQuote">Get Quote Now</button>
-                    <button class="home__botaoLearn">Learn More</button>
+    <section class="home" id="home">
+        <div>
+            <h1 class="home__h1">Meet the best Hospital</h1>
+            <p class="home__p">We know how large objects will act, but things on a small scale.</p>
+            <div class="home__divbotao">
+                <button class="home__botaoQuote">Get Quote Now</button>
+                <a href="#faq"><button class="home__botaoLearn">Learn More</button></a>
+            </div>
+        </div>
+        <div class="home__divForm">
+            <h2 class="home__divForm__titulo">Book Appointment</h2>
+            <form class="home__divForm__form" id="f" data-form>
+                <label for="enName" class="home__divForm__form__label">Name</label>
+                <input type="text" class="home__divForm__form__input" placeholder="Full Name" required id="enName" name="Name" data-form-name>
+                
+                <label for="enEmail" class="home__divForm__form__label">Email</label>
+                <input type="text"class="home__divForm__form__input" placeholder="example@gmail.com" required id="enEmail" name="email" data-form-email>
+                
+                <label for="enDepartment" class="home__divForm__form__label">Department</label>
+                <select class="home__divForm__form__input home__divForm__form__select" required id="enDepartment" data-form-department> 
+                    <option value="" selected disabled hidden>Please select</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="general">General</option>
+                    <option value="gynecologist">Gynecologist</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="ophthalmology">Ophthalmology</option>
+                    <option value="surgery">Surgery</option>
+                    <option value="psychiatry">Psychiatry</option>
+                </select>
+                
+                <label for="enTime" class="home__divForm__form__label">Time</label>
+                <select class="home__divForm__form__input" id="enTime" data-form-time required>
+                    <option disabled value="" selected disabled hidden>Please select</option>
+                    <option value="1:00PM">1:00PM Available</option>
+                    <option disabled>2:00PM Unavailable</option>
+                    <option>2:00PM Available</option>
+                    <option>3:00PM Available</option>
+                    <option>4:00PM Available</option>
+                    <option disabled>6:00PM Unavailable</option>
+                    <option disabled>7:00PM Unavailable</option>
+                </select>
+            <input class="home__divForm__form__submit" type="submit" value="Submit Appointment"></input>
+            </form>
+        </div>
+    </section>
+
+    <div class="popUp">
+        <div class="popUp__container">
+            <button class="popUp__botaoX" id="popUp__fechar1">x</button>
+            <h2 class="popUp__titulo">Commitment registered.</h2>
+            <p class="popUp__paragrafo" data-popUp-paragrafo></p>
+            <button class="popUp__botaoOk" id="popUp__fechar2">OK</button>
+        </div>
+    </div>
+
+<section class="cases" id="product">
+        <h2 class="cases__titulo">Leading Medicine</h2>
+        <p class="cases__paragrafo">Problems trying to resolve 
+            the conflict between the 
+            two major realms of Classical 
+            physics: Newtonian mechanics</p>
+
+        <div class="cases__caseBox__wrapper">
+            <div class="cases__caseBox cases__caseBox--invisivel">
+                <div class="cases__caseBox__top">
+                    <div class="cases__caseBox__top__img"></div> <!-- Imagem que não oferece conteúdo a página. -->
+                    <h3 class="cases__caseBox__top__titulo">Emergency Case</h3>
+                </div>
+
+                <div class="cases__caseBox__bottom">
+                    <ul class="cases__caseBox__bottom__lista">
+                        <li><span>The best products start with Figma</span></li>
+                        <li><span>Design with real data</span></li>
+                        <li><span>Lightning fast prototyping</span></li>
+                        <li><span>Fastest way to organize</span></li>
+                        <li><span>Work at the speed of thought.</span></li>
+                        <a>Learn more</a>
+                    </ul>
                 </div>
             </div>
-            <div class="home__divForm">
-                <h2 class="home__divForm__titulo">Book Appointment</h2>
-                <form class="home__divForm__form" id="f" data-form>
-                    <label for="enName" class="home__divForm__form__label">Name</label>
-                    <input type="text" class="home__divForm__form__input" placeholder="Full Name" required id="enName" name="Name" data-form-name>
-                    
-                    <label for="enEmail" class="home__divForm__form__label">Email</label>
-                    <input type="text"class="home__divForm__form__input" placeholder="example@gmail.com" required id="enEmail" name="email" data-form-email>
-                    
-                    <label for="enDepartment" class="home__divForm__form__label">Department</label>
-                    <select class="home__divForm__form__input home__divForm__form__select" required id="enDepartment" data-form-department> 
-                        <option value="" selected disabled hidden>Please select</option>
-                        <option value="cardiology">Cardiology</option>
-                        <option value="general">General</option>
-                        <option value="gynecologist">Gynecologist</option>
-                        <option value="neurology">Neurology</option>
-                        <option value="ophthalmology">Ophthalmology</option>
-                        <option value="surgery">Surgery</option>
-                        <option value="psychiatry">Psychiatry</option>
-                    </select>
-                    
-                    <label for="enTime" class="home__divForm__form__label">Time</label>
-                    <select class="home__divForm__form__input" id="enTime" data-form-time required>
-                        <option disabled value="" selected disabled hidden>Please select</option>
-                        <option value="1:00PM">1:00PM Available</option>
-                        <option disabled>2:00PM Unavailable</option>
-                        <option>2:00PM Available</option>
-                        <option>3:00PM Available</option>
-                        <option>4:00PM Available</option>
-                        <option disabled>6:00PM Unavailable</option>
-                        <option disabled>7:00PM Unavailable</option>
-                    </select>
-                <input class="home__divForm__form__submit" type="submit" value="Submit Appointment"></input>
-                </form>
-            </div>
-        </section>
 
-        <div class="popUp">
-            <div class="popUp__container">
-                <button class="popUp__botaoX" id="popUp__fechar1">x</button>
-                <h2 class="popUp__titulo">Commitment registered.</h2>
-                <p class="popUp__paragrafo" data-popUp-paragrafo></p>
-                <button class="popUp__botaoOk" id="popUp__fechar2">OK</button>
+            <div class="cases__caseBox cases__caseBox--invisivel">
+                <div class="cases__caseBox__top">
+                    <div class="cases__caseBox__top__img"></div> <!-- Img que não oferece conteúdo a página. -->
+                    <h3 class="cases__caseBox__top__titulo">Cancer Care</h3>
+            </div>
+
+                <div class="cases__caseBox__bottom">
+                    <ul class="cases__caseBox__bottom__lista">
+                        <li><span>The best products start with Figma</span></li>
+                        <li><span>Design with real data</span></li>
+                        <li><span>Lightning fast prototyping</span></li>
+                        <li><span>Fastest way to organize</span></li>
+                        <li><span>Work at the speed of thought.</span></li>
+                        <a>Learn more</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cases__caseBox cases__caseBox--invisivel">
+                <div class="cases__caseBox__top">
+                    <div class="cases__caseBox__top__img"></div> <!-- Img que não oferece conteúdo a página. -->
+                    <h3 class="cases__caseBox__top__titulo">Health Queries</h3>
+                </div>
+
+                <div class="cases__caseBox__bottom">
+                    <ul class="cases__caseBox__bottom__lista">
+                        <li><span>The best products start with Figma</span></li>
+                        <li><span>Design with real data</span></li>
+                        <li><span>Lightning fast prototyping</span></li>
+                        <li><span>Fastest way to organize</span></li>
+                        <li><span>Work at the speed of thought.</span></li>
+                        <a>Learn more</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <h2 class="testimonial__titulo">What clients Say</h2>
+        <p class="testimonial__paragrafo">Checkout what our clients say about the two major realms of Classical physics: Newtonian mechanics</p>
+
+            <div class="owl-carousel owl-theme testimonial__carousel">
+                <!-- Pekeno -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars1.svg" alt="Rating 1 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo">Ela alugou um continente na minha cabeça</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/pekeno.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Pekeno</p>
+                    </div>
+                </div>
+                <!-- Poli -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars2.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo">Minha frase não coube aqui 🤬</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/poli.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Poli</p>
+                    </div>
+                </div>
+                <!-- Aysha -->
+                <div class="testimonial__box--wrapper">
+                    <div class="testimonial__box aysha">
+                        <img src="assets/img/shooting-side.png" class="staraysha">
+                        <img src="assets/img/shooting-side.png" class="staraysha">
+                        <img src="assets/img/shooting-side.png" class="staraysha">
+                        <img src="assets/img/shooting-side.png" class="staraysha">
+
+                        <div>
+                            <span class="fa fa-star aysharating"></span>
+                            <span class="fa fa-star aysharating"></span>
+                            <span class="fa fa-star aysharating"></span>
+                            <span class="fa fa-star aysharating"></span>
+                            <span class="fa fa-star aysharating"></span>
+                            <span class="fa fa-star aysharating"></span>
+                        </div>
+                        <p class="tesmimonial__box__paragrafo">Parou em 😎</p>
+                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; justify-self: flex-end;">
+                            <div class="fotocliente__aysha--wrapper">
+                                <img src="assets/img/pp/aysha.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
+                            </div>
+                            <p>Aysha</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Guibis -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars2.svg" alt="Rating 2 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo">Caralho o cruzeiro perdeu denovo</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/guibis.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Guibis</p>
+                    </div>
+                </div>
+                <!-- Andrew -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars3.svg" alt="Rating 3 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo chupeta">Ela tem insta??</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/andrew.jpeg" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Anderson polga</p>
+                    </div>
+                </div>
+                <!-- Rafa -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo">Nunca se cale ou estará em silêncio 🤫</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/rafa.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Rafa</p>
+                    </div>
+                </div>
+                <!-- Marcao -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo">Pedaço de bolo</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/marcao.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Marcão</p>
+                    </div>
+                </div>
+                <!-- Tody -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo">Vamo no show do shawn mendes</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/tody.jpeg" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Tody</p>
+                    </div>
+                </div>
+                <!-- Ripnado -->
+                <div class="testimonial__box">
+                    <img src="assets/img/stars1.svg" alt="Rating 1 stars out of 5" class="testimonial__box__rating">
+                    <p class="tesmimonial__box__paragrafo">A porra da vaga era pra PCD</p>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                        <div class="testimonial__box__fotocliente--wrapper">
+                            <img src="assets/img/pp/ripnado.jpg" alt="Profile picture" class="testimonial__box__fotocliente">
+                        </div>
+                        <p>Ripnado</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="faq" id="faq">
+        <h2 class="faq__titulo">FAQ</h2>
+        <p class="faq__paragrafo">Main questions about the problems trying to resolve 
+            the conflict between the 
+            two major realms of Classical 
+            physics: Newtonian mechanics </p>
+
+        <div class="faq__boxwrapper">
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
+                </div>
+            </div>
+
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
+                </div>
+            </div>
+
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
+                </div>
             </div>
         </div>
 
-        <section class="cases">
-            <h2 class="cases__titulo">Leading Medicine</h2>
-            <p class="cases__paragrafo">Problems trying to resolve 
-                the conflict between the 
-                two major realms of Classical 
-                physics: Newtonian mechanics</p>
-
-            <div class="cases__caseBox__wrapper">
-                <div class="cases__caseBox cases__caseBox--invisivel">
-                    <div class="cases__caseBox__top">
-                        <div class="cases__caseBox__top__img"></div> <!-- Imagem que não oferece conteúdo a página. -->
-                        <h3 class="cases__caseBox__top__titulo">Emergency Case</h3>
-                    </div>
-
-                    <div class="cases__caseBox__bottom">
-                        <ul class="cases__caseBox__bottom__lista">
-                            <li><span>The best products start with Figma</span></li>
-                            <li><span>Design with real data</span></li>
-                            <li><span>Lightning fast prototyping</span></li>
-                            <li><span>Fastest way to organize</span></li>
-                            <li><span>Work at the speed of thought.</span></li>
-                            <a>Learn more</a>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="cases__caseBox cases__caseBox--invisivel">
-                    <div class="cases__caseBox__top">
-                        <div class="cases__caseBox__top__img"></div> <!-- Img que não oferece conteúdo a página. -->
-                        <h3 class="cases__caseBox__top__titulo">Cancer Care</h3>
-                </div>
-
-                    <div class="cases__caseBox__bottom">
-                        <ul class="cases__caseBox__bottom__lista">
-                            <li><span>The best products start with Figma</span></li>
-                            <li><span>Design with real data</span></li>
-                            <li><span>Lightning fast prototyping</span></li>
-                            <li><span>Fastest way to organize</span></li>
-                            <li><span>Work at the speed of thought.</span></li>
-                            <a>Learn more</a>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="cases__caseBox cases__caseBox--invisivel">
-                    <div class="cases__caseBox__top">
-                        <div class="cases__caseBox__top__img"></div> <!-- Img que não oferece conteúdo a página. -->
-                        <h3 class="cases__caseBox__top__titulo">Health Queries</h3>
-                    </div>
-
-                    <div class="cases__caseBox__bottom">
-                        <ul class="cases__caseBox__bottom__lista">
-                            <li><span>The best products start with Figma</span></li>
-                            <li><span>Design with real data</span></li>
-                            <li><span>Lightning fast prototyping</span></li>
-                            <li><span>Fastest way to organize</span></li>
-                            <li><span>Work at the speed of thought.</span></li>
-                            <a>Learn more</a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="testimonial">
-            <h2 class="testimonial__titulo">What clients Say</h2>
-            <p class="testimonial__paragrafo">Checkout what our clients say about the two major realms of Classical physics: Newtonian mechanics</p>
-
-                <div class="owl-carousel owl-theme testimonial__carousel">
-                    <!-- Pekeno -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars1.svg" alt="Rating 1 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo">Ela alugou um continente na minha cabeça</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/pekeno.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Pekeno</p>
-                        </div>
-                    </div>
-                    <!-- Poli -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars2.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo">Minha frase não coube aqui 🤬</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/poli.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Poli</p>
-                        </div>
-                    </div>
-                    <!-- Aysha -->
-                    <div class="testimonial__box--wrapper">
-                        <div class="testimonial__box aysha">
-                            <img src="assets/img/shooting-side.png" class="staraysha">
-                            <img src="assets/img/shooting-side.png" class="staraysha">
-                            <img src="assets/img/shooting-side.png" class="staraysha">
-                            <img src="assets/img/shooting-side.png" class="staraysha">
-
-                            <div>
-                                <span class="fa fa-star aysharating"></span>
-                                <span class="fa fa-star aysharating"></span>
-                                <span class="fa fa-star aysharating"></span>
-                                <span class="fa fa-star aysharating"></span>
-                                <span class="fa fa-star aysharating"></span>
-                                <span class="fa fa-star aysharating"></span>
-                            </div>
-                            <p class="tesmimonial__box__paragrafo">Parou em 😎</p>
-                            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px; justify-self: flex-end;">
-                                <div class="fotocliente__aysha--wrapper">
-                                    <img src="assets/img/pp/aysha.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
-                                </div>
-                                <p>Aysha</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Guibis -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars2.svg" alt="Rating 2 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo">Caralho o cruzeiro perdeu denovo</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/guibis.jfif" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Guibis</p>
-                        </div>
-                    </div>
-                    <!-- Andrew -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars3.svg" alt="Rating 3 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo chupeta">Ela tem insta??</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/andrew.jpeg" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Anderson polga</p>
-                        </div>
-                    </div>
-                    <!-- Rafa -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo">Nunca se cale ou estará em silêncio 🤫</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/rafa.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Rafa</p>
-                        </div>
-                    </div>
-                    <!-- Marcao -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo">Onde você mora?</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/marcao.PNG" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Marcão</p>
-                        </div>
-                    </div>
-                    <!-- Tody -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars4.svg" alt="Rating 4 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo">Vamo no show do shawn mendes</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/tody.jpeg" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Tody</p>
-                        </div>
-                    </div>
-                    <!-- Ripnado -->
-                    <div class="testimonial__box">
-                        <img src="assets/img/stars1.svg" alt="Rating 1 stars out of 5" class="testimonial__box__rating">
-                        <p class="tesmimonial__box__paragrafo">A porra da vaga era pra PCD</p>
-                        <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
-                            <img src="assets/img/pp/ripnado.jpg" alt="Profile picture" class="testimonial__box__fotocliente">
-                            <p>Ripnado</p>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="faq">
-            <h2 class="faq__titulo">FAQ</h2>
-            <p class="faq__paragrafo">Main questions about the problems trying to resolve 
-                the conflict between the 
-                two major realms of Classical 
-                physics: Newtonian mechanics </p>
-
-            <div class="faq__boxwrapper">
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
-                </div>
-
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
-                </div>
-
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
+        <div class="faq__boxwrapper">
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
                 </div>
             </div>
 
-            <div class="faq__boxwrapper">
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
-                </div>
-
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
-                </div>
-
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
                 </div>
             </div>
 
-
-            <div class="faq__boxwrapper">
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
                 </div>
+            </div>
+        </div>
 
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
-                </div>
 
-                <div class="div_collapsible">
-                    <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
-                    <div class="content">
-                        <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
-                        <div style="height: 5px; width: 1px;"></div>
-                    </div>
+        <div class="faq__boxwrapper">
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
                 </div>
             </div>
 
-        </section>
-
-        <section class="pricing">
-            <h2 class="pricing__titulo">Pricing</h2>
-            <p class="pricing__paragrafo">Prices regarding the problems trying to resolve the conflict between 
-                the two major realms of Classical physics: Newtonian mechanics</p>
-
-            <div class="pricing__boxplano__wrapper">
-                <div class="pricing__boxplano">
-                    <h3 class="pricing__boxplano__titulo">FREE</h3>
-                    <p class="pricing__boxplano__paragrafo">Organize across all apps manually by hand</p>
-                    <img class="pricing__boxplano__imgpreco" src="assets/img/price1.svg">
-                    <ul class="pricing__boxplano__lista">
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Unlimited updates</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Access to our storage</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">1GB cloud storage</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-unchecked.svg">Email and community support</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-unchecked.svg">Business consultancy</li>
-                    </ul>
-                    <button class="pricing__boxplano__button">Free</button>
-                </div>
-
-                <div class="pricing__boxplano pricingAtivo">
-                    <h3 class="pricing__boxplano__titulo">STANDARD</h3>
-                    <p class="pricing__boxplano__paragrafo">Organize across all apps automatically</p>
-                    <img class="pricing__boxplano__imgpreco" src="assets/img/price2.svg">
-                    <ul class="pricing__boxplano__lista">
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Unlimited updates</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Access to our storage</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">100GB cloud storage</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Email and community support</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-unchecked.svg">Business consultancy</li>
-                    </ul>
-                    <button class="pricing__boxplano__button">Try for free</button>
-                </div>
-
-                <div class="pricing__boxplano">
-                    <h3 class="pricing__boxplano__titulo">PREMIUM</h3>
-                    <p class="pricing__boxplano__paragrafo">Organize across all apps automatically but better!</p>
-                    <img class="pricing__boxplano__imgpreco" src="assets/img/price3.svg">
-                    <ul class="pricing__boxplano__lista">
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Unlimited updates</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Access to our storage</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">100GB cloud storage</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Email and community support</li>
-                        <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Business consultancy</li>
-                    </ul>
-                    <button class="pricing__boxplano__button">Try for free</button>
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
                 </div>
             </div>
-        </section>
-        <div style="background-color: blue; width: 100vw; height: 100px;"></div>
-        
 
+            <div class="div_collapsible">
+                <button type="button" class="collapsible"><img class="faq__box__seta" src="assets/img/setaazuldireita.svg">O Palmeiras tem mundial?</button>
+                <div class="content">
+                    <p>Em 1999 o campeão da Champions League Manchester United, chegou ao final do mundial de clubes para enfrentar o campeão da Libertadores daquele ano, o Palmeiras, a partida terminou em 1 a 0 com um gol de Keane, desde então o time palestrino não chegou mais a final da competição, então, dado os fatos apresentados, conclui-se que o Palmeiras não tem mundial.</p>
+                    <div style="height: 5px; width: 1px;"></div>
+                </div>
+            </div>
+        </div>
 
+    </section>
 
+    <section class="pricing" id="pricing">
+        <h2 class="pricing__titulo">Pricing</h2>
+        <p class="pricing__paragrafo">Prices regarding the problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics</p>
+
+        <div class="pricing__boxplano__wrapper">
+            <div class="pricing__boxplano">
+                <h3 class="pricing__boxplano__titulo">FREE</h3>
+                <p class="pricing__boxplano__paragrafo">Organize across all apps manually by hand</p>
+                <img class="pricing__boxplano__imgpreco" src="assets/img/price1.svg">
+                <ul class="pricing__boxplano__lista">
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Unlimited updates</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Access to our storage</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">1GB cloud storage</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-unchecked.svg">Email and community support</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-unchecked.svg">Business consultancy</li>
+                </ul>
+                <button class="pricing__boxplano__button">Free</button>
+            </div>
+
+            <div class="pricing__boxplano pricingAtivo">
+                <h3 class="pricing__boxplano__titulo">STANDARD</h3>
+                <p class="pricing__boxplano__paragrafo">Organize across all apps automatically</p>
+                <img class="pricing__boxplano__imgpreco" src="assets/img/price2.svg">
+                <ul class="pricing__boxplano__lista">
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Unlimited updates</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Access to our storage</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">100GB cloud storage</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Email and community support</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-unchecked.svg">Business consultancy</li>
+                </ul>
+                <button class="pricing__boxplano__button">Try for free</button>
+            </div>
+
+            <div class="pricing__boxplano">
+                <h3 class="pricing__boxplano__titulo">PREMIUM</h3>
+                <p class="pricing__boxplano__paragrafo">Organize across all apps automatically but better!</p>
+                <img class="pricing__boxplano__imgpreco" src="assets/img/price3.svg">
+                <ul class="pricing__boxplano__lista">
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Unlimited updates</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Access to our storage</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">100GB cloud storage</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Email and community support</li>
+                    <li class="pricing__boxplano__lista__item"><img src="assets/img/feature-checked.svg">Business consultancy</li>
+                </ul>
+                <button class="pricing__boxplano__button">Try for free</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+        <div class="newsletter__desktop">
+            <h2 class="newsletter__desktop__titulo">Get in Touch</h2>
+            <p class="newsletter__desktop__paragrafo">The gradual accumulation of information about atomic and small-scale behaviour during the first quarter of the 20th.</p>
+        </div>
+        <h2 class="newsletter__mobile__titulo">Subscribe For Latest Newsletter</h2>
+        <div class="newsletter__subscribe">
+            <input type="text" placeholder="Your Email" name="email" class="newsletter__subscribe__input">
+            <button class="newsletter__subscribe__button">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_grupo">
+                <h3 class="footer__grupo__titulo">Social media</h3>
+                <p class="footer__grupo__paragrafo">Follow us on our social media!</p>
+                <div class="fa-2x footer__grupo__socialmedia--wrapper">
+                    <a href="https://www.linkedin.com/in/lucas-fernandes-tolotto/" target="_blank" style="color: none;"><i class="fab fa-linkedin footer__grupo__socialmedia"></i></a>
+                    <a href="https://github.com/lucastoll" target="_blank"><i class="fab fa-github footer__grupo__socialmedia"></i></a>
+                    <a href="https://www.instagram.com/l.tolotto/"><i target="_blank" class="fab fa-instagram footer__grupo__socialmedia"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__grupo">
+                <h3 class="footer__grupo__titulo">Company info</h3>
+                <ul class="footer__grupo__lista">
+                    <li class="footer__grupo__lista__item">About Us</li>
+                    <li class="footer__grupo__lista__item">Carrier</li>
+                    <li class="footer__grupo__lista__item">We are hiring</li>
+                    <li class="footer__grupo__lista__item">Blog</li>
+                </ul>
+            </div>
+
+            <div class="footer__grupo">
+                <h3 class="footer__grupo__titulo">Features</h3>
+                <ul class="footer__grupo__lista">
+                    <li class="footer__grupo__lista__item">Business Marketing</li>
+                    <li class="footer__grupo__lista__item">User Analytic</li>
+                    <li class="footer__grupo__lista__item">Live Chat</li>
+                    <li class="footer__grupo__lista__item">Unlimited Support</li>
+                </ul>
+            </div>
+
+            <div class="footer__grupo">
+                <h3 class="footer__grupo__titulo">Resources</h3>
+                <ul class="footer__grupo__lista">
+                    <li class="footer__grupo__lista__item">IOS & Android</li>
+                    <li class="footer__grupo__lista__item">Watch a Demo</li>
+                    <li class="footer__grupo__lista__item">Customers</li>
+                    <li class="footer__grupo__lista__item">API</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="creditos">
+        <i class="fas fa-star-and-crescent creditosestrela"></i>
+        <p class="creditos__p">Design By Figmaland & Code by github.com/</p>
+        <p class="creditos__p usergithub">lucastoll</p>
+        <i class="fas fa-star-and-crescent creditosestrela fa-flip-horizontal"></i>
+    </div>
+
+    <div class="teste">
+        <div class="estrelaesquerda">
+            <i class="fas fa-2x fa-star-half"></i>
+        </div>
+
+        <div class="divtextomeio">
+            <div class="textomeio">
+                <p class="creditos__p">Design By Figmaland & Code by</p>
+                <p class="creditos__p usergithub" style="margin-left: 2px;">lucastoll</p>
+            </div>
+        </div>
+
+        <div class="estreladireita">
+            <i class="fas fa-2x fa-star-half fa-flip-horizontal"></i>
+        </div>
     </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="assets/js/myscript.js"></script>
+<script src="assets/js/animacaoFaqBox.js"></script>
+<script src="assets/js/animacaoPricingBox.js"></script>
+<script src="assets/js/animacaoNavbarMobile.js"></script>
+<script src="assets/js/formularioPopUp.js"></script>
+<script src="assets/js/scrollRevealCaseBox.js"></script>
 <script src="assets/js/owlcarousel.js"></script>
-<script src="assets/js/animacoes.js"></script>
 </html>

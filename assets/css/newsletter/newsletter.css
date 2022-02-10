@@ -1,0 +1,15 @@
+.newsletter{
+    align-items: center;
+    background-color: #252B42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+    .newsletter{
+        flex-direction: row;
+        padding: 0px 50px;
+    }
+}
