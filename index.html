@@ -566,32 +566,37 @@
         </div>
     </footer>
 
-    <div class="creditos">
+    <!--<div class="creditos">
         <i class="fas fa-star-and-crescent creditosestrela"></i>
         <p class="creditos__p">Design By Figmaland & Code by github.com/</p>
         <p class="creditos__p usergithub">lucastoll</p>
         <i class="fas fa-star-and-crescent creditosestrela fa-flip-horizontal"></i>
-    </div>
+    </div> -->
 
-    <div class="teste">
-        <div class="estrelaesquerda">
-            <i class="fas fa-2x fa-star-half"></i>
-        </div>
 
-        <div class="divtextomeio">
-            <div class="textomeio">
+    <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+        <div class="credito" id="divcreditos">
+            <div id="starLeft">
+                <i class="fas fa-2x fa-star-half" id="l1"></i>
+                <i class="fas fa-2x fa-star" id="l2"></i>
+            </div>
+
+            <div id="textoMeio">
                 <p class="creditos__p">Design By Figmaland & Code by</p>
-                <p class="creditos__p usergithub" style="margin-left: 2px;">lucastoll</p>
+                <p class="creditos__p" id="usergithub">lucastoll</p>
+            </div>
+
+            <div id="starRight">
+                <i class="fas fa-2x fa-star-half fa-flip-horizontal" id="r1"></i>
+                <i class="fas fa-2x fa-star" id="r2"></i>
             </div>
         </div>
-
-        <div class="estreladireita">
-            <i class="fas fa-2x fa-star-half fa-flip-horizontal"></i>
-        </div>
     </div>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/js/animacaoCreditos.js"></script>
 <script src="assets/js/animacaoFaqBox.js"></script>
 <script src="assets/js/animacaoPricingBox.js"></script>
 <script src="assets/js/animacaoNavbarMobile.js"></script>

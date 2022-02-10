@@ -1,79 +1,142 @@
-.creditos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    font-size: 18px;
-}
-
-.creditosestrela{
-    margin: 3px;
-}
-
-.teste{
+#divcreditos{ /* Primeiro wrapper */
     text-align: center;
     position: relative;
-    width: 100%;
+    width: 350px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+#divcreditos.visivel{ /* Primeiro wrapper */
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .divtextomeio{
     overflow: hidden;
-    width: 300px;
 }
 
-.textomeio{
+#textoMeio{
     height: 20px;
-    width: fit-content;
+    width: 0px;
     overflow: hidden;
     font-size: 12px;
     display: flex;
     justify-content: center;
+    white-space: nowrap;
 }
 
-.estrelaesquerda{
+#starLeft{
     position: absolute;
-    left: 46%;
-    animation: staresquerda 1.5s linear;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+    margin-bottom: 5px;
 }
 
-.estreladireita{
+#starRight{
+    margin-bottom: 5px;
     position: absolute;
-    right: 46%;
-    animation: stardireita 1.5s linear;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+    right: 45%;
 }
 
-@keyframes textomeio{
+@media screen and (min-width: 420px) {
+    #starRight{
+        right: 46%;
+    }
+
+    #textoMeio{
+        font-size: 16px;
+    }
+
+    #divcreditos{
+        width: 410px;
+    }
+}
+
+#l2{
+    top: 0%;
+    left: 0%;
+    transform: rotate(0deg);
+    position: absolute;
+    margin-bottom: 5px;
+    opacity: 0;
+    transition: color 1.2s ease-in;
+}
+
+#r2{
+    top: 0%;
+    left: 0%;
+    transform: rotate(0deg);
+    position: absolute;
+    margin-bottom: 5px;
+    opacity: 0;
+    transition: color 1.2s ease-in;
+}
+
+#usergithub{
+    margin-left: 5px;
+    transition: color 1.2s ease-in;
+}
+
+@keyframes starFullMovingAnimation {
+    0%{
+        top: 0%;
+    }
+    50%{
+        top: -35%;
+    }
+    100%{
+        top: 35%;
+    }
+}
+
+@keyframes starFullOpacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes textoMeioMobile{
     from{
         width: 0px;
     }
     to{
-        width: fit-content;
+        width: 300px;
+    }
+}
+
+@keyframes textoMeioResto{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 400px;
     }
 }
 
 
 @keyframes staresquerda {
     from{
-        left: 46%;
+        left: 47%;
     }
     to{
-        left: 5%;
+        left: 0%;
     }
 }
 
 @keyframes stardireita {
     from{
-        right: 46%;
+        right: 47%;
     }
     to{
-        right: 5%;
+        right: 0%;
     }
 }
+
+
