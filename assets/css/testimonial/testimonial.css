@@ -8,6 +8,8 @@
 
 .testimonial__carousel{
     max-width: 370px;
+    opacity: 1s;
+    transition: all 2s ease;
 }
 
 .testimonial__carousel:hover{
@@ -18,8 +20,18 @@
     cursor: grabbing;
 }
 
+.testimonial__carousel--invisivel{
+    position: relative;
+    transform: translateY(150px); 
+    opacity: 0;
+}
+
 @media screen and (min-width: 1024px) {
     .testimonial__carousel{
         max-width: 1300px;
+    }
+
+    .testimonial__carousel--invisivel{
+        transform: translateX(-150px); 
     }
 }

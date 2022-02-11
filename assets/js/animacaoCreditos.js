@@ -1,16 +1,17 @@
 /* Scroll Reveal */
 
 async function revealCreditos() {
-    let reveals = document.getElementById("divcreditos");
-    let starLeft = document.getElementById("starLeft");
-    let starRight = document.getElementById("starRight");
-    let textoMeio = document.getElementById("textoMeio");
-
-    let starLeftHalf = document.getElementById("l1");
-    let starLeftFull = document.getElementById("l2");
-    let starRightHalf = document.getElementById("r1");
-    let starRightFull = document.getElementById("r2");
-    let lucastoll = document.getElementById("usergithub");
+    /* divs */
+    let reveals = document.querySelector(".creditos__div");
+    let starLeft = document.querySelector(".creditos__div__starLeft");
+    let starRight = document.querySelector(".creditos__div__starRight");
+    let textoMeio = document.querySelector(".creditos__div__textoMeio");
+    /* elementos */
+    let starLeftHalf = document.querySelector(".creditos__div__starLeft__halfStarLeft");
+    let starLeftFull = document.querySelector(".creditos__div__starLeft__fullStarLeft");
+    let starRightHalf = document.querySelector(".creditos__div__starRight__halfStarRight");
+    let starRightFull = document.querySelector(".creditos__div__starRight__fullStarRight");
+    let lucastoll = document.querySelector(".creditos__div__textoMeio__usergithub");
 
     let windowHeight = window.innerHeight; /* height da pagina */
     let elementTop = reveals.getBoundingClientRect().top; /* distancia do elemento até o topo da pagina */
@@ -42,20 +43,14 @@ async function revealCreditos() {
         });  
         });  
     } 
-    /* esse else faz o elemento sumir denovo se você subir a página, sem ele o elemento revela e fica lá.     
-    else 
-    {
-    reveals[i].classList.remove("invisivel"); 
-    } */
   }
-  
-  window.addEventListener("scroll", revealCreditos); /* acontece sempre que o usuario fazer scroll */
 
+  window.addEventListener("scroll", revealCreditos); /* acontece sempre que o usuario fazer scroll */
 
   function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
   }
-
+  
   /* Função girar estrela */
 
   var looper;
@@ -63,8 +58,8 @@ async function revealCreditos() {
   var grausNegativo=0;
 
   function rotate(){
-    document.getElementById("l2").style.transform = `rotate(${grausNegativo}deg)`
-    document.getElementById("r2").style.transform = `rotate(${graus}deg)`
+    document.querySelector(".creditos__div__starLeft__fullStarLeft").style.transform = `rotate(${grausNegativo}deg)`
+    document.querySelector(".creditos__div__starRight__fullStarRight").style.transform = `rotate(${graus}deg)`
     graus++;
     grausNegativo--;
     looper = setTimeout(rotate, 130);

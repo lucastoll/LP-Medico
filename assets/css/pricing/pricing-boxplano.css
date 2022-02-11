@@ -4,24 +4,26 @@
     border: 2px solid #23A6F0;
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    height: 550px;
+    gap: 10px;
+    height: 500px;
     justify-content: center;
-    padding: 50px 40px;
+    padding: 50px 40px 10px 40px;
     width: 70%;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
+    opacity: 1s;
+    transition: 2s all ease;
 }
 
 .pricing__boxplano:hover{
     cursor: pointer;
-    background: #f1f1f1;
+    background: #e7e7e7;
 }
 
 .pricing__boxplano.pricingAtivo{
     background: #252B42;
     color: white;
-    height: 590px;
-    transition: all .2s ease-in-out;
+    height: 550px;
+    transition: background .2s ease-in-out, color .2s ease-in-out, height .2s ease-in-out, margin-bottom .2s ease-in-out, all 2s ease-in-out;
     margin-bottom: 40px;
 }
 
@@ -33,11 +35,22 @@
     gap: 20px;
 }
 
+.pricing__boxplano--invisivel{
+    position: relative;
+    transform: translateY(150px); 
+    opacity: 0;
+}
+
+
 @media screen and (min-width: 1024px) {
     .pricing__boxplano__wrapper{
         flex-direction: row;
         gap: 3px;
         height: 600px;
+    }
+    
+    .pricing__boxplano--invisivel{
+        transform: translateY(50px); 
     }
 }
 
@@ -45,4 +58,7 @@
     .pricing__boxplano.pricingAtivo{
         margin-bottom: 0px;
     }
+
 }
+
+

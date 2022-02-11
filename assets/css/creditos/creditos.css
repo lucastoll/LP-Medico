@@ -1,27 +1,44 @@
-#divcreditos{ /* Primeiro wrapper */
-    text-align: center;
-    position: relative;
-    width: 350px;
-    height: 32px;
+.creditos--wrapper{ /* Primeiro wrapper */
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: 2s all ease;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    width: 100vw;
+    overflow: hidden;
 }
 
-#divcreditos.visivel{ /* Primeiro wrapper */
+
+.creditos__div{ /* segunda div, que fica no centro por causa da primeira*/
+    align-items: center;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    opacity: 0;
+    position: relative;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: 2s all ease;
+    width: 350px;
+    height: 60px;
+}
+
+.creditos__div.visivel{ /* classe para fazer o scroll reveal da  .creditos__div*/
     transform: translateY(0);
     opacity: 1;
 }
 
-.divtextomeio{
-    overflow: hidden;
+.creditos__div__starLeft{ /* Div que contém as estrelas da esquerda */
+    position: absolute;
+    margin-bottom: 5px;
 }
 
-#textoMeio{
+.creditos__div__starRight{ /* Div que contém as estrelas da direita */
+    margin-bottom: 5px;
+    position: absolute;
+    right: 45%;
+}
+
+.creditos__div__textoMeio{
     height: 20px;
     width: 0px;
     overflow: hidden;
@@ -31,32 +48,22 @@
     white-space: nowrap;
 }
 
-#starLeft{
-    position: absolute;
-    margin-bottom: 5px;
-}
-
-#starRight{
-    margin-bottom: 5px;
-    position: absolute;
-    right: 45%;
-}
 
 @media screen and (min-width: 420px) {
-    #starRight{
+    .creditos__div__starRight{
         right: 46%;
     }
 
-    #textoMeio{
+    .creditos__div__textoMeio{
         font-size: 16px;
     }
 
-    #divcreditos{
+    .creditos__div{
         width: 410px;
     }
 }
 
-#l2{
+.creditos__div__starLeft__fullStarLeft{ 
     top: 0%;
     left: 0%;
     transform: rotate(0deg);
@@ -66,7 +73,7 @@
     transition: color 1.2s ease-in;
 }
 
-#r2{
+.creditos__div__starRight__fullStarRight{
     top: 0%;
     left: 0%;
     transform: rotate(0deg);
@@ -76,7 +83,7 @@
     transition: color 1.2s ease-in;
 }
 
-#usergithub{
+.creditos__div__textoMeio__usergithub{
     margin-left: 5px;
     transition: color 1.2s ease-in;
 }

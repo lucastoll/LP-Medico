@@ -2,15 +2,17 @@
     height: 57px;
     border: 0px;
     padding-left: 15px;
-    width: 180px;
-    font-size: 16px;
+    width: 50vw;
+    font-size: 14px;
     font-family: Montserrat;
     font-weight: 600;
     border-radius: 4px;
+    background: inherit;
 }
 
 @media screen and (min-width: 768px) {
     .newsletter__subscribe__input{
         width: 360px;
+        font-size: 16px;
     }
 }

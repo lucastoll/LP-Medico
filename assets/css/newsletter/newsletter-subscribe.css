@@ -4,6 +4,11 @@
     margin-top: 30px;
     display: flex;
     gap: 2px;
+    transition: background .3s ease-in-out;
+}
+
+.newsletter__subscribe:hover{
+    background: rgb(224, 224, 224);
 }
 
 input:focus{

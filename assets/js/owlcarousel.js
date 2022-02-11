@@ -20,3 +20,27 @@ $(document).ready(function(){
     });
 
   });
+
+  /* Scroll reveal carrousel */
+
+  /* Animação caseBox */
+const animaTestimonialCarousel = function revealCaseBox () {
+    let cases = document.querySelector('.testimonial__carousel')
+    var windowHeight = window.innerHeight; /* height da pagina */
+    var elementTop = cases.getBoundingClientRect().top;
+    var elementVisible = 100;
+
+    var elementTop = cases.getBoundingClientRect().top;
+    if(elementTop < windowHeight - elementVisible) /* distancia ate o topo < altura da pag - altura da revelação */
+    {                                         
+        cases.classList.remove("testimonial__carousel--invisivel")
+    } 
+
+
+    if(cases.getBoundingClientRect().top < windowHeight - elementVisible)
+    {
+        sleep(17000);
+    }
+}
+
+window.addEventListener("scroll", animaTestimonialCarousel);
