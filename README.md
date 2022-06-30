@@ -1,7 +1,7 @@
 # 🩺 LandingPageMedico
 
 <ul>
-  <li>Link: https://lucastoll.github.io/LandingPageMedico/ <br></li>
+  <li>Link: https://lucastoll.github.io/LP-Medico/ <br></li>
   <li>Protótipo Figma: https://www.figma.com/community/file/946069156532464479 </li>
 </ul>
 
